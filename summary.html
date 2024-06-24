@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summarized Article</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        h2 {
+            color: #333;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 5px;
+        }
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #fff;
+            font-size: 14px;
+            resize: vertical; /* Allows vertical resizing */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 style="text-align: center;">Summarized Article</h1>
+    </header>
+
+    <section>
+        <h2>Original Article</h2>
+        <textarea rows="10" readonly>{{ article }}</textarea>
+
+        <h2>Summarized Article</h2>
+        <textarea rows="10" readonly>{{ summary }}</textarea>
+    </section>
+</body>
+</html>
